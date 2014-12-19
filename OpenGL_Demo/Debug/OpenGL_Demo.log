@@ -1,0 +1,20 @@
+﻿Build started 12/19/2014 12:51:18.
+     1>Project "C:\Documents and Settings\All Users\Documents\Shared\Final of _________OpenGL_Demo\OpenGL_Demo\OpenGL_Demo.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\OpenGL_Demo.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         OpenGL_Demo.vcxproj -> C:\Documents and Settings\All Users\Documents\Shared\Final of _________OpenGL_Demo\Debug\OpenGL_Demo.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\OpenGL_Demo.unsuccessfulbuild".
+         Touching "Debug\OpenGL_Demo.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\All Users\Documents\Shared\Final of _________OpenGL_Demo\OpenGL_Demo\OpenGL_Demo.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.09
