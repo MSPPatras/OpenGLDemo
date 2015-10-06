@@ -7,7 +7,6 @@
 #include "glut.h"
 
 
-
 using namespace std;
 
 double z = 0, v = 0;
@@ -32,10 +31,10 @@ void Display(void)
 	glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
-	// Changes the seed for the random number generator 
+	// Changes the seed for the random number generator
 	// based on a specific number (number of seconds since 1/1/1970)
    	srand(time(NULL));
-	
+
 	// 2 loops that render the map starting on the top left corner of the screen
 	for (int i = 0; i < 100; i++)
 	{
@@ -44,16 +43,16 @@ void Display(void)
 			// Generates a number in [0,5]
 			int temp_int = rand() % 6;
 			//cout << ("int = ") << temp_int << endl;
-			if (temp_int == 0) 
+			if (temp_int == 0)
 			{	// dark blue
 				glColor3f(0.05f,0.05,0.30f);
-			}else if (temp_int == 1) 
+			}else if (temp_int == 1)
 			{	// green
 				glColor3f(0.5f, 1.0f, 0.5f);
 			}else if (temp_int == 2)
 			{	// blue
 				glColor3f(0.5f, 0.5f, 1.0f);
-			}else if (temp_int == 3) 
+			}else if (temp_int == 3)
 			{	// cyan-ish
 				glColor3f(0.7f, 1.0f, 0.9f);
 			}else if (temp_int == 4)
@@ -135,7 +134,7 @@ void Display(void)
 
 void Keyboard(unsigned char key, int x, int y)
 //Note: because there is an Idle-func, we don't have to call Display here
-{	
+{
 	switch(key)
 	{
 	case 'q':	//ESC
@@ -249,7 +248,7 @@ int main (int argc, char **argv)
 	glutInitDisplayMode(GLUT_RGBA| GLUT_DOUBLE);
 	glutInitWindowPosition(400,40);
 	glutInitWindowSize(800,600);
-	glutCreateWindow("Demo"); 
+	glutCreateWindow("Demo");
 	glutDisplayFunc(Display);
     glutKeyboardFunc(Keyboard);
 	glutTimerFunc(updateTime, update, 1);
